@@ -24,8 +24,8 @@
     </style>
 </head>
 
-<body class="">
-    <div class="flex flex-col gap-8 container bg-custom-very-dark-desaturated-blue-1 text-custom-white p-5">
+<body class=" bg-custom-very-dark-desaturated-blue-1 text-custom-white px-5 py-10 grid place-items-center">
+    <div class="flex flex-col gap-8 container sm:max-w-[450px]">
         <div class="flex flex-row w-full justify-between">
             <div>
                 <h1 class="text-3xl font-bold">calc</h1>
@@ -42,7 +42,7 @@
                         <span>2</span>
                         <span>3</span>
                     </div>
-                    <div class="bg-custom-very-dark-desaturated-blue-2 px-1 py-1 rounded-full flex flex-row gap-2">
+                    <div class="bg-custom-very-dark-desaturated-blue-2 px-1 py-1 rounded-full flex flex-row gap-2 toggle__container">
                         <button id="theme-1" class="rounded-full bg-custom-red w-4 h-4"></button>
                         <button id="theme-2"
                             class="rounded-full w-4 h-4 bg-custom-very-dark-desaturated-blue-2 hover:bg-custom-red"></button>
@@ -53,29 +53,29 @@
             </div>
         </div>
 
-        <div class="flex flex-col justify-center bg-custom-very-dark-desaturated-blue-3 h-20 rounded-xl pr-4">
-            <span class="text-right inline-block w-full text-4xl font-bold">399,981</span>
+        <div class="flex flex-col justify-center bg-custom-very-dark-desaturated-blue-3 h-20 rounded-xl pr-4 calc__display">
+            <span class="text-right inline-block w-full text-4xl font-bold calc__display__text">399,981</span>
         </div>
 
-        <div class="grid grid-cols-4 gap-4 p-8 bg-custom-very-dark-desaturated-blue-2 rounded-xl text-4xl font-bold text-custom-very-dark-grayish-blue">
-            <button class="bg-custom-white py-3 rounded-xl ">7</button>
-            <button class="bg-custom-white py-3 rounded-xl ">8</button>
-            <button class="bg-custom-white py-3 rounded-xl ">9</button>
-            <button class="text-custom-white bg-custom-desaturated-dark-blue-1 rounded-xl text-3xl py-3">DEL</button>
-            <button class="bg-custom-white py-3 rounded-xl ">4</button>
-            <button class="bg-custom-white py-3 rounded-xl ">5</button>
-            <button class="bg-custom-white py-3 rounded-xl ">6</button>
-            <button class="bg-custom-white py-3 rounded-xl ">+</button>
-            <button class="bg-custom-white py-3 rounded-xl ">1</button>
-            <button class="bg-custom-white py-3 rounded-xl ">2</button>
-            <button class="bg-custom-white py-3 rounded-xl ">3</button>
-            <button class="bg-custom-white py-3 rounded-xl ">-</button>
-            <button class="bg-custom-white py-3 rounded-xl ">.</button>
-            <button class="bg-custom-white py-3 rounded-xl ">0</button>
-            <button class="bg-custom-white py-3 rounded-xl ">/</button>
-            <button class="bg-custom-white py-3 rounded-xl ">x</button>
-            <button class="col-span-2 text-custom-white bg-custom-desaturated-dark-blue-1 rounded-xl text-3xl py-3">RESET</button>
-            <button class="col-span-2 text-custom-white bg-custom-red rounded-xl text-3xl py-3">=</button>
+        <div class="grid grid-cols-4 gap-4 p-8 bg-custom-very-dark-desaturated-blue-2 rounded-xl text-4xl font-bold text-custom-very-dark-grayish-blue keypad__container">
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">7</button>
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">8</button>
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">9</button>
+            <button class="text-custom-white bg-custom-desaturated-dark-blue-1 rounded-xl text-3xl py-3 border-b-custom-desaturated-dark-blue-2 border-b-4 hover:bg-opacity-75 delete__button">DEL</button>
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">4</button>
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">5</button>
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">6</button>
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">+</button>
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">1</button>
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">2</button>
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">3</button>
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">-</button>
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">.</button>
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">0</button>
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">/</button>
+            <button class="bg-custom-white py-3 rounded-xl border-b-gray-500 border-b-4 hover:bg-gray-300 number__buttons">x</button>
+            <button class="col-span-2 text-custom-white bg-custom-desaturated-dark-blue-1 rounded-xl text-3xl py-3 border-b-custom-desaturated-dark-blue-2 border-b-4 hover:bg-opacity-75 reset__button">RESET</button>
+            <button class="col-span-2 text-custom-white bg-custom-red rounded-xl text-3xl py-3 border-b-custom-dark-red border-b-4 hover:bg-opacity-90 equal__button">=</button>
 
         </div>
     </div>
