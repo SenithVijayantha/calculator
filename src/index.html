@@ -1,83 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="output.css" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 
     <script defer src="script.js"></script>
     <title>Frontend Mentor | Calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
 
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
     </style>
-  </head>
+</head>
 
-  <body class="">
-    <div
-      class="container bg-custom-very-dark-desaturated-blue-1 text-custom-white p-10"
-    >
-      <div class="flex flex-row w-full justify-between">
-        <div>
-          <h1>calc</h1>
-        </div>
-
-        <div class="flex gap-6">
-          <div>
-            <span class="uppercase font-semibold">theme</span>
-          </div>
-
-          <div>
+<body class="">
+    <div class="flex flex-col gap-8 container bg-custom-very-dark-desaturated-blue-1 text-custom-white p-5">
+        <div class="flex flex-row w-full justify-between">
             <div>
-              <span>1</span>
-              <span>2</span>
-              <span>3</span>
+                <h1 class="text-3xl font-bold">calc</h1>
             </div>
-            <div
-              class="bg-custom-very-dark-desaturated-blue-2 px-2 rounded-full"
-            >
-              <button
-                id="theme-1"
-                class="rounded-full bg-custom-red w-3 h-3"
-              ></button>
-              <button
-                id="theme-2"
-                class="rounded-full w-3 h-3 bg-custom-very-dark-desaturated-blue-2 hover:bg-custom-red"
-              ></button>
-              <button
-                id="theme-3"
-                class="rounded-full w-3 h-3 bg-custom-very-dark-desaturated-blue-2 hover:bg-custom-red"
-              ></button>
+
+            <div class="flex gap-6 items-end">
+                <div>
+                    <span class="uppercase font-semibold text-sm">theme</span>
+                </div>
+
+                <div class="flex flex-col gap-1 items-center">
+                    <div class="flex gap-2">
+                        <span>1</span>
+                        <span>2</span>
+                        <span>3</span>
+                    </div>
+                    <div class="bg-custom-very-dark-desaturated-blue-2 px-1 py-1 rounded-full flex flex-row gap-2">
+                        <button id="theme-1" class="rounded-full bg-custom-red w-4 h-4"></button>
+                        <button id="theme-2"
+                            class="rounded-full w-4 h-4 bg-custom-very-dark-desaturated-blue-2 hover:bg-custom-red"></button>
+                        <button id="theme-3"
+                            class="rounded-full w-4 h-4 bg-custom-very-dark-desaturated-blue-2 hover:bg-custom-red"></button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
 
-      <div></div>
+        <div class="flex flex-col justify-center bg-custom-very-dark-desaturated-blue-3 h-20 rounded-xl pr-4">
+            <span class="text-right inline-block w-full text-4xl font-bold">399,981</span>
+        </div>
 
-      <div></div>
+        <div class="grid grid-cols-4 gap-4 p-8 bg-custom-very-dark-desaturated-blue-2 rounded-xl text-4xl font-bold text-custom-very-dark-grayish-blue">
+            <button class="bg-custom-white py-3 rounded-xl ">7</button>
+            <button class="bg-custom-white py-3 rounded-xl ">8</button>
+            <button class="bg-custom-white py-3 rounded-xl ">9</button>
+            <button class="text-custom-white bg-custom-desaturated-dark-blue-1 rounded-xl text-3xl py-3">DEL</button>
+            <button class="bg-custom-white py-3 rounded-xl ">4</button>
+            <button class="bg-custom-white py-3 rounded-xl ">5</button>
+            <button class="bg-custom-white py-3 rounded-xl ">6</button>
+            <button class="bg-custom-white py-3 rounded-xl ">+</button>
+            <button class="bg-custom-white py-3 rounded-xl ">1</button>
+            <button class="bg-custom-white py-3 rounded-xl ">2</button>
+            <button class="bg-custom-white py-3 rounded-xl ">3</button>
+            <button class="bg-custom-white py-3 rounded-xl ">-</button>
+            <button class="bg-custom-white py-3 rounded-xl ">.</button>
+            <button class="bg-custom-white py-3 rounded-xl ">0</button>
+            <button class="bg-custom-white py-3 rounded-xl ">/</button>
+            <button class="bg-custom-white py-3 rounded-xl ">x</button>
+            <button class="col-span-2 text-custom-white bg-custom-desaturated-dark-blue-1 rounded-xl text-3xl py-3">RESET</button>
+            <button class="col-span-2 text-custom-white bg-custom-red rounded-xl text-3xl py-3">=</button>
+
+        </div>
     </div>
 
     <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a
+            href="#">Your Name Here</a>.
     </div>
-  </body>
+</body>
+
 </html>
