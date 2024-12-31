@@ -1,36 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- displays site properly based on user's device -->
-    <link rel="stylesheet" href="output.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="output.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
+    <script defer src="script.js"></script>
     <title>Frontend Mentor | Calculator app</title>
 
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
-        .attribution {
-            font-size: 11px;
-            text-align: center;
-        }
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-        .attribution a {
-            color: hsl(228, 45%, 44%);
-        }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body class="">
+    <div
+      class="container bg-custom-very-dark-desaturated-blue-1 text-custom-white p-10"
+    >
+      <div class="flex flex-row w-full justify-between">
+        <div>
+          <h1>calc</h1>
+        </div>
 
-    <h1 class="bg-custom-very-dark-desaturated-blue">Hello</h1>
+        <div class="flex gap-6">
+          <div>
+            <span class="uppercase font-semibold">theme</span>
+          </div>
+
+          <div>
+            <div>
+              <span>1</span>
+              <span>2</span>
+              <span>3</span>
+            </div>
+            <div
+              class="bg-custom-very-dark-desaturated-blue-2 px-2 rounded-full"
+            >
+              <button
+                id="theme-1"
+                class="rounded-full bg-custom-red w-3 h-3"
+              ></button>
+              <button
+                id="theme-2"
+                class="rounded-full w-3 h-3 bg-custom-very-dark-desaturated-blue-2 hover:bg-custom-red"
+              ></button>
+              <button
+                id="theme-3"
+                class="rounded-full w-3 h-3 bg-custom-very-dark-desaturated-blue-2 hover:bg-custom-red"
+              ></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div></div>
+
+      <div></div>
+    </div>
 
     <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Your Name Here</a>.
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
     </div>
-</body>
-
+  </body>
 </html>
