@@ -9,6 +9,7 @@ const deleteButton = document.querySelector('.delete__button');
 const resetButton = document.querySelector('.reset__button');
 const equalButton = document.querySelector('.equal__button');
 const numberButtons = document.querySelectorAll('.number__buttons')
+const calcDisplayText = document.querySelector('.calc__display__text');
 
 themeOneTogglerButton.addEventListener('click', applyThemeOne);
 themeTwoTogglerButton.addEventListener('click', applyThemeTwo);
@@ -19,6 +20,7 @@ function applyThemeOne() {
     container.classList.add('bg-custom-very-dark-desaturated-blue-1', 'text-custom-white');
     toggleContainerElement.classList.add('bg-custom-very-dark-desaturated-blue-2');
     calcDisplayElement.classList.add('bg-custom-very-dark-desaturated-blue-3');
+    calcDisplayText.classList.add('bg-custom-very-dark-desaturated-blue-3');
     keypadContainer.classList.add('bg-custom-very-dark-desaturated-blue-2', 'text-custom-very-dark-grayish-blue');
     deleteButton.classList.add('bg-custom-desaturated-dark-blue-1');
     resetButton.classList.add('bg-custom-desaturated-dark-blue-1');
@@ -35,6 +37,7 @@ function applyThemeTwo() {
     container.classList.add('bg-custom-light-gray', 'text-gray-700');
     toggleContainerElement.classList.add('bg-custom-grayish-red');
     calcDisplayElement.classList.add('bg-custom-grayish-red');
+    calcDisplayText.classList.add('bg-custom-grayish-red');
     keypadContainer.classList.add('bg-custom-grayish-red');
     deleteButton.classList.add('bg-custom-dark-moderate-cyan');
     resetButton.classList.add('bg-custom-dark-moderate-cyan');
@@ -50,6 +53,7 @@ function applyThemeThree() {
     container.classList.add('bg-custom-very-dark-violet-1', 'text-custom-light-yellow');
     toggleContainerElement.classList.add('bg-custom-very-dark-violet-2');
     calcDisplayElement.classList.add('bg-custom-very-dark-violet-2');
+    calcDisplayText.classList.add('bg-custom-very-dark-violet-2');
     keypadContainer.classList.add('bg-custom-very-dark-violet-2');
     deleteButton.classList.add('bg-custom-very-dark-violet-3', 'border-b-custom-vivid-magenta', 'hover:bg-purple-500');
     resetButton.classList.add('bg-custom-very-dark-violet-3', 'border-b-custom-vivid-magenta', 'hover:bg-purple-500');
@@ -62,9 +66,10 @@ function applyThemeThree() {
 }
 
 function removeThemeClasses() {
-    container.classList.remove('bg-custom-very-dark-desaturated-blue-1', 'bg-custom-light-gray', 'bg-custom-very-dark-violet-1', 'text-gray-700', 'text-custom-light-yellow');
+    container.classList.remove('bg-custom-very-dark-desaturated-blue-1', 'bg-custom-light-gray', 'bg-custom-very-dark-violet-1', 'text-gray-700', 'text-custom-light-yellow', 'text-custom-white');
     toggleContainerElement.classList.remove('bg-custom-very-dark-desaturated-blue-2', 'bg-custom-grayish-red', 'bg-custom-very-dark-violet-2');
     calcDisplayElement.classList.remove('bg-custom-very-dark-desaturated-blue-3', 'bg-custom-grayish-red', 'bg-custom-very-dark-violet-2');
+    calcDisplayText.classList.remove('bg-custom-very-dark-desaturated-blue-3', 'bg-custom-grayish-red', 'bg-custom-very-dark-violet-2');
     keypadContainer.classList.remove('bg-custom-very-dark-desaturated-blue-2', 'bg-custom-grayish-red', 'text-custom-very-dark-grayish-blue', 'bg-custom-very-dark-violet-2');
     deleteButton.classList.remove('bg-custom-desaturated-dark-blue-1', 'bg-custom-dark-moderate-cyan', 'bg-custom-very-dark-violet-3', 'border-b-custom-vivid-magenta', 'hover:bg-purple-500');
     resetButton.classList.remove('bg-custom-desaturated-dark-blue-1', 'bg-custom-dark-moderate-cyan', 'bg-custom-very-dark-violet-3', 'border-b-custom-vivid-magenta', 'hover:bg-purple-500');
